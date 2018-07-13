@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Capgemini.aspx" title="Home"  description="Capgemini Home Page">
+      <siteMapNode title="L and D" url="LDHome.aspx" description="Learning and Developement - Capgemini">
+        <siteMapNode title="FMP" url="LDFMP.aspx"></siteMapNode>
+        <siteMapNode title="MDP" url="LDMDP.aspx"></siteMapNode>
+        <siteMapNode title="ET" url="LDET.aspx"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode title="Sales Group" url="SalesHome.aspx" description="Sales Group - Capgemini">
+        <siteMapNode title="AMSI" url="SalesAMSI.aspx"></siteMapNode>
+        <siteMapNode title="ICMA" url="SalesICMA.aspx"></siteMapNode>
+        <siteMapNode title="Karma" url="SalesKarma.aspx"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode title="University" url="UnivHome.aspx" description="University - Capgemini">
+        <siteMapNode title="DAL" url="UnivDAL.aspx"></siteMapNode>
+        <siteMapNode title="GARI" url="UnivGARI.aspx"></siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>

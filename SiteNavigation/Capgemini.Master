@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Capgemini.Master.cs" Inherits="SiteNavigation.Home" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table style="width:100%;height:100%">
+            <tr>
+                <td colspan="2" style="background-color:darkviolet;color:white;font-size:54px;font-weight:600;text-align:center">
+                    <hr style="border:2px solid black" />
+                Capgemini
+                     <hr style="border:2px solid black" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" >
+                    <asp:SiteMapDataSource ID="smdsCapgemini" runat="server" />
+                    <asp:Menu ID="menuCapgemini" runat="server" DataSourceID="smdsCapgemini" ></asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="width:20%;vertical-align:top;background-color:burlywood;">
+                    <asp:TreeView ID="treeviewCapgemini" runat="server" DataSourceID="smdsCapgemini"></asp:TreeView>
+                </td>
+                <td style="width:80%;vertical-align:top;background-color:bisque">
+                    <asp:SiteMapPath ID="siteMapCapgemini" runat="server"></asp:SiteMapPath>
+                </td>                
+            </tr>
+            <tr>
+                <td style="width:80%;vertical-align:top;background-color:antiquewhite">
+                    <asp:ContentPlaceHolder ID="cphHome" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="font-size:15px;text-align:center;font-weight:200;background-color:darkviolet;width:100%">
+                        &copy; CopyRight. All Rights Reserved. 2018
+                    </td>
+            </tr>
+        </table>        
+    </div>
+    </form>
+</body>
+</html>
